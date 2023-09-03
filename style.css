@@ -1,0 +1,192 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the whole page */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #003366;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta-button {
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6600;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Style the services section */
+#services {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.service-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+/* Style the testimonials section */
+#testimonials {
+    background-color: #f7f7f7;
+    padding: 2rem 0;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+/* Style the quote form section */
+#quote {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.quote-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quote-form input,
+.quote-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.quote-form button {
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quote-form button:hover {
+    background-color: #002244;
+}
+
+/* Style the contact section */
+#contact {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f7f7f7;
+}
+
+#contact p {
+    margin-bottom: 1rem;
+}
+
+/* Style the footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.live-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.live-chat img {
+    margin-right: 0.5rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #002244;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .cta-button {
+        margin-top: 1rem;
+    }
+}
